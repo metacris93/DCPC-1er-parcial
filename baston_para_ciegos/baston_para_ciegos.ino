@@ -51,7 +51,7 @@ void segundo_sensor(){
   duracion2 = pulseIn(pin_echo2,HIGH);
   distancia2 = (duracion2/2)/29; //la distancia esta en centimetros 
   
-   if( distancia2 > 30){
+   if( distancia2 > 20){
       Serial.println("Sensor2...");
       Serial.print(distancia2);
       Serial.println(" cm");
